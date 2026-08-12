@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jollen Dai</title>
+<meta name="description" content="Jollen Dai — AI safety research. Testing whether interventions that claim to remove capabilities from language models actually remove them.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #555;
+    --accent: #0b57d0;
+    --rule: #e5e5e5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212;
+      --fg: #e8e8e8;
+      --muted: #a0a0a0;
+      --accent: #8ab4f8;
+      --rule: #2a2a2a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 17px;
+  }
+  main {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 4rem 1.25rem 5rem;
+  }
+  h1 { font-size: 1.7rem; margin: 0 0 0.25rem; }
+  .tagline { color: var(--muted); margin: 0 0 1rem; }
+  .links { margin: 0 0 2.5rem; padding: 0; }
+  .links a { color: var(--accent); text-decoration: none; margin-right: 1rem; }
+  .links a:hover { text-decoration: underline; }
+  h2 {
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    border-top: 1px solid var(--rule);
+    padding-top: 2rem;
+    margin: 2.5rem 0 0.75rem;
+  }
+  p { margin: 0 0 1rem; }
+  ul { padding-left: 1.2rem; margin: 0 0 1rem; }
+  li { margin-bottom: 0.5rem; }
+  a { color: var(--accent); }
+  .quiet { color: var(--muted); font-size: 0.92rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Jollen Dai</h1>
+  <p class="tagline">CS undergraduate at UCLA, working on AI safety.</p>
+  <p class="links">
+    <a href="https://github.com/jxdai2007">GitHub</a>
+    <a href="https://scholar.google.com/citations?user=b8hkG5QAAAAJ">Scholar</a>
+    <a href="https://www.linkedin.com/in/jollen-dai">LinkedIn</a>
+    <a href="mailto:jxdaiship@gmail.com">Email</a>
+  </p>
+
+  <p>When a method claims to remove a capability from a language model, did it actually remove it, or just hide it? Most of my work is about answering that question carefully: building the evaluations that tell the difference, and testing removal methods against attacks they weren't designed for.</p>
+
+  <h2>Now</h2>
+  <ul>
+    <li>Testing whether runtime interventions (activation steering, concept erasure, neuron dampening) remove capabilities or merely suppress them — extending the comparison in <a href="https://arxiv.org/abs/2505.22586">PISCES</a> to the intervention families it left out.</li>
+    <li>Working through the <a href="https://www.arena.education/">ARENA</a> curriculum.</li>
+    <li>Finishing a paper on group bias in aligned LLMs, from the NSF Trustworthy AI REU at RIT (advised by Prof. Ashique KhudaBukhsh). Short version: the bias wasn't removable. Every method we tried either damaged the model or quietly failed, and the standard benchmarks couldn't see the difference.</li>
+  </ul>
+
+  <h2>Background</h2>
+  <ul>
+    <li>NSF REU Site: Trustworthy AI, RIT — summer 2026. Bias localization and removal in aligned LLMs. Implemented causal mediation, activation steering, concept erasure (INLP/LEACE), SAE feature ablation, and closed-form weight editing against their source papers. Oral presentation at the RIT Undergraduate Research Symposium.</li>
+    <li>BlueDot Impact — Technical AI Safety course, August 2026 intensive cohort.</li>
+    <li>Two sole-author papers at IEEE MIT URTC 2024.</li>
+  </ul>
+
+  <h2>Writing</h2>
+  <p class="quiet">Coming soon — posts on unlearning robustness and intervention evaluation. Substack and LessWrong links will live here.</p>
+
+  <h2>Contact</h2>
+  <p>jxdaiship@gmail.com — I'm interested in evaluations, interpretability-adjacent safety work, and mentored research programmes for 2027.</p>
+</main>
+</body>
+</html>
