@@ -1,4 +1,5 @@
 # Site data (single source of truth for substitutions)
+X_URL: none
 LESSWRONG_URL: https://www.lesswrong.com/users/jollen-dai
 SUBSTACK_URL: https://substack.com/@jollendai
 ADMONYMOUS_URL: none
