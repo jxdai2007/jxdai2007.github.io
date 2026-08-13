@@ -38,6 +38,19 @@
   }
   h1 { font-size: 1.7rem; margin: 0 0 0.25rem; }
   .tagline { color: var(--muted); margin: 0 0 1rem; }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.25rem;
+  }
+  .headshot {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
   .links { margin: 0 0 2.5rem; padding: 0; }
   .links a { color: var(--accent); text-decoration: none; margin-right: 1rem; }
   .links a:hover { text-decoration: underline; }
@@ -59,13 +72,20 @@
 </head>
 <body>
 <main>
-  <h1>Jollen Dai</h1>
-  <p class="tagline">CS undergraduate at UCLA, working on AI safety.</p>
+  <header class="header">
+    <div>
+      <h1>Jollen Dai</h1>
+      <p class="tagline">CS undergraduate at UCLA, working on AI safety.</p>
+    </div>
+    <img class="headshot" src="assets/photo.jpg" alt="Photo of Jollen Dai">
+  </header>
   <p class="links">
     <a href="https://github.com/jxdai2007">GitHub</a>
     <a href="https://scholar.google.com/citations?user=b8hkG5QAAAAJ">Scholar</a>
     <a href="https://www.linkedin.com/in/jollen-dai">LinkedIn</a>
     <a href="mailto:jxdaiship@gmail.com">Email</a>
+    <a href="assets/cv.pdf">CV</a>
+    <a href="https://www.lesswrong.com/users/jollen-dai">LessWrong</a>
   </p>
 
   <p>When a method claims to remove a capability from a language model, did it actually remove it, or just hide it? Most of my work is about answering that question carefully: building the evaluations that tell the difference, and testing removal methods against attacks they weren't designed for.</p>
